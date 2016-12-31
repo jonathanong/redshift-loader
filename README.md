@@ -1,11 +1,11 @@
 # Redshift Loader
 
 [![NPM version][npm-image]][npm-url]
-5	[![Build status][travis-image]][travis-url]
-6	[![Test coverage][codecov-image]][codecov-url]
-7	[![Dependency Status][david-image]][david-url]
-8	[![License][license-image]][license-url]
-9	[![Downloads][downloads-image]][downloads-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+[![Dependency Status][david-image]][david-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
 A module to help load data from an object stream directly to Redshift.
 

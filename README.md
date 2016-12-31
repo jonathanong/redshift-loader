@@ -34,7 +34,7 @@ Options are:
 - `s3 [required]` - an instance of `AWS.S3()`
 - `s3_bucket <String>` - S3 bucket to use. Only required if you don't set it in your `AWS.S3()` options.
 - `s3_prefix <String> [required]` - a prefix to save the data. It should end with a `/`.
-- `s3_format <Function>` - how the files are formatted, defaulting to `YYYY/MM/DD/HH/MM/SS-UUIDV4.gz`
+- `s3_format <Function>` - how the files are formatted, defaulting to `YYYY/MM/DD/HH/MM/UUIDV4`
 - `redshift_url <String> [required]` - URL for the Redshift server
 - `redshift_table <String> [required]` - table to load data into
 - `transform <AsyncFunction>` - optional transform function for every object. Useful if you want to add `.id` or something to every object.

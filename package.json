@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib",
   "scripts": {
-    "lint": "standard --fix .",
+    "lint": "standard --fix 'lib/**/*.js'",
     "test": "jest",
     "test-cov": "jest --coverage"
   },

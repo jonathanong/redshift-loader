@@ -31,10 +31,18 @@ Options are:
 - `files = 1` - the number of files to load data from.
   Redshift loads data faster if it loads data from multiple files in parallel.
   You really only need to use this if you are loading a lot of data.
-- `s3 [required]` - an instance of `AWS.S3()`
-- `s3_bucket <String>` - S3 bucket to use. Only required if you don't set it in your `AWS.S3()` options.
-- `s3_prefix <String> [required]` - a prefix to save the data. It should end with a `/`.
-- `s3_format <Function>` - how the files are formatted, defaulting to `YYYY/MM/DD/HH/MM/UUIDV4`
-- `redshift_url <String> [required]` - URL for the Redshift server
-- `redshift_table <String> [required]` - table to load data into
 - `transform <AsyncFunction>` - optional transform function for every object. Useful if you want to add `.id` or something to every object.
+- `s3 <Object> [required]` - s3 options
+  - `region <String>` - s3 bucket region
+  - `bucket <String> [required]` - s3 bucket to store dat
+  - `prefix <String>` - a prefix to save the data. It should end with a `/`.
+  - `format <Function>` - how the files are formatted, defaulting to `YYYY/MM/DD/HH/MM/UUIDV4`
+  - `accessKeyId <String> [required]`
+  - `secretAccessKey <String> [required]`
+- `redshift <Object> [required]`
+  - `url <String> [required]` - URL for the redshift server
+  - `table <String> [required]` - table to load into
+
+### writer.write({})
+
+### writer.then(() => {})

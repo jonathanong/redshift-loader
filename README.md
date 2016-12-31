@@ -52,7 +52,17 @@ Options are:
 
 ### writer.write({})
 
+```js
+const loader = RedshiftLoader()
+
+loader.write({
+  event: 'impression'
+})
+```
+
 ### writer.then(() => {})
+
+Copies all the data into Redshift.
 
 [npm-image]: https://img.shields.io/npm/v/redshift-loader.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/redshift-loader

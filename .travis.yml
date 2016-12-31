@@ -1,9 +1,12 @@
 node_js:
-  - 6
-  - 7
+- 6
+- 7
 language: node_js
 sudo: false
 script:
-  - npm run lint
-  - npm run test-cov
-  - bash <(curl -s https://codecov.io/bash)
+- npm run lint
+- npm run test-cov
+- bash <(curl -s https://codecov.io/bash)
+env:
+  global:
+    secure: GD+QybeGGmDuz9se/Acp+imMXqJwYf/qJeSseb7qn1n6rtWhQLsM1UnJciFC4ySIjXRIyMpp6VxqZ8KT9yLrlXcU3POjvXhbSyhYlwItOyEIg+Usq26V8IM1e4qjQxMMtR7RLM8NunpuxBrY38s6waktKMxIUOBKQVCUOCr9kr/+jsq6EiL7BT8/PpbIHT4TSED5tmwfTPVHGbQ5u1OqHUFZlxDJJjBLucxqFtHGpp16fpJLxSWZQz6esN1GxvfJ2cq5MaeM9wznHEs9Vi6M5EuE8dRtz2rx0hisBV9ACzWX6H54LaCOimGemhZuPICXWhibZe5cKBpoireQn09U7yqvfjdQtiGxfaaaHf7OxfMhs47mbjw6Kk8+1XuHzflAJKiYaWfv97vzHQeXecU2ZWXEJiWZVRfG96WLjk7xRmkmktrMteER4BdJQGNSZCnF8uSYbZj9GG7ruYx+wZXFDbFXb9VoO3AmM/FXj9BCPbHFyIDB63V5Esd3qAlqHw2HfAwqNL/hCd5kgI86FxGGYajszR1kwSQXjm3D8jjpMl20Qsg6BmidWsA+XR6itAtRaGMLXoevFBi5cLwRUKGZZ3s03pxcTgqcqxDKYDh5lCRlRdbNn3e2Hy3zvwMhp9qooWXqEIq8AwnEMOBDPeErtcoSOjBdEBw8C09no+kUKpI=

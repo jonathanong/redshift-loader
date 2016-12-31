@@ -1,0 +1,6 @@
+
+CREATE TABLE test_events (
+  id VARCHAR(36) PRIMARY KEY,
+  event VARCHAR(30) NOT NULL DISTKEY,
+  received_at TIMESTAMP NOT NULL SORTKEY
+);

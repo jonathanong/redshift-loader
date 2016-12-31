@@ -1,5 +1,12 @@
 # Redshift Loader
 
+[![NPM version][npm-image]][npm-url]
+5	[![Build status][travis-image]][travis-url]
+6	[![Test coverage][codecov-image]][codecov-url]
+7	[![Dependency Status][david-image]][david-url]
+8	[![License][license-image]][license-url]
+9	[![Downloads][downloads-image]][downloads-url]
+
 A module to help load data from an object stream directly to Redshift.
 
 The flow is as follows:
@@ -46,3 +53,16 @@ Options are:
 ### writer.write({})
 
 ### writer.then(() => {})
+
+[npm-image]: https://img.shields.io/npm/v/redshift-loader.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/redshift-loader
+[travis-image]: https://img.shields.io/travis/jonathanong/redshift-loader/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/jonathanong/redshift-loader
+[codecov-image]: https://img.shields.io/codecov/c/github/jonathanong/redshift-loader/master.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/jonathanong/redshift-loader
+[david-image]: http://img.shields.io/david/jonathanong/redshift-loader.svg?style=flat-square
+[david-url]: https://david-dm.org/jonathanong/redshift-loader
+[license-image]: http://img.shields.io/npm/l/redshift-loader.svg?style=flat-square
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/redshift-loader.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/redshift-loader
